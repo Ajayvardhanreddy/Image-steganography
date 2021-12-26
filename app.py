@@ -3,7 +3,6 @@ from PIL import Image
 from encode_decode import *
 import os
 
-
 app = Flask(__name__)
 
 
