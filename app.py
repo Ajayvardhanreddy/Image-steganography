@@ -2,8 +2,7 @@ from flask import Flask, request, render_template
 from PIL import Image
 from encode_decode import *
 import os
-from io import BufferedReader
-import cv2
+
 
 app = Flask(__name__)
 
