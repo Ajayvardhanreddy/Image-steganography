@@ -24,7 +24,7 @@
                     </div>
                   </div>
                   <div class="custom-file">
-                        <input type="file" class="custom-file-input" name="encode_img" accept="image/png" required>
+                        <input type="file" class="custom-file-input" name="encode_img" accept="image/png" onchange="loadFile(event)" required>
                         <label class="custom-file-label" >Upload Image...</label>
                   </div>&ensp;
                   <div class="row align-items-center mt-4">
@@ -42,6 +42,9 @@
                     <div class="col">
                       <button class="btn btn-primary mt-4">Submit</button>
                     </div>
+                  </div>
+                    <div style="img_output" align="center">
+                     <img id="output" width="400" />
                   </div>
                 </div>
               </div>
