@@ -72,7 +72,7 @@ def showData(image):
 
 # Encode data into image
 def encode_text(data_encode, encode_img_name):
-    image = cv2.imread('images/encode.png')
+    image = cv2.imread('static/encode.png')
     data = data_encode
 
     filename = encode_img_name
