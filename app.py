@@ -18,9 +18,9 @@ def encode():
         data_encode = request.form['data_encode']
         encode_img_name = request.form['encode_img_name']
         image = Image.open(encode_img)
-        image.save('images/encode.png')
+        image.save('static/encode.png')
         steganography_encode(data_encode, encode_img_name)
-        return render_template('decode.html')
+        return render_template('decode.html', decode_img=1)
 
 
 @app.route('/decode', methods=['post', 'get'])
