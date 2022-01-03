@@ -29,9 +29,7 @@ def decode():
         encode_img_name = request.form['decode_img_name']
         text = steganography_decode(encode_img_name)
         os.remove(encode_img_name)
-        return r'''<p>Decoded message:<img src="{{ url_for('static', filename='encode.png') }}" style="width: 60%; margin: auto; display: block;" > <h1>{}</h1><p>'''.format(text)
-
-
+        return render_template('output.html', msg=text)
 
 
 if __name__ == "__main__":
